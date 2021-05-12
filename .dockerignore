@@ -1,9 +1,7 @@
 node_modules
-pgdatabase
+database
 esdata
 redisdata
 *.env
-**/dist/**
-.redisdata
 data
-.data
+__mocks__

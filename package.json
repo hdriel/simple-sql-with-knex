@@ -1,0 +1,22 @@
+{
+  "name": "simple-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:db": "docker-compose -f docker-compose.infra.yaml up",
+    "stop:db": "docker-compose -f docker-compose.infra.yaml down",
+    "start:dev": "node index.js",
+    "migrate:make": "knex migrate:make your-migration-name",
+    "migrate:up": "knex migrate:latest",
+    "migrate:down": "knex migrate:rollback"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^9.0.2",
+    "knex": "^0.95.4",
+    "pg": "^8.6.0"
+  }
+}
